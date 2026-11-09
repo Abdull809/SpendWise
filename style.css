@@ -1,0 +1,271 @@
+
+/* =========================================
+   SPENDWISE CSS - PART 1
+   RESET, SIDEBAR, NAVIGATION AND HEADER
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.5;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+a:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 2px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    min-height: 100vh;
+    display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 255px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #ffffff;
+    border-right: 1px solid #e8ecf2;
+    padding: 28px 18px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 0 10px 30px;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf2ff;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.logo h2 {
+    font-size: 21px;
+    font-weight: 800;
+    color: #18243a;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.nav-item {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 0 14px;
+    border-radius: 12px;
+    color: #687386;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+    background: #f1f5ff;
+    color: #2563eb;
+    transform: translateX(2px);
+}
+
+.nav-item.active {
+    background: #eaf2ff;
+    color: #2563eb;
+}
+
+.nav-item span:first-child {
+    width: 22px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* SIDEBAR BUDGET */
+
+.sidebar-budget {
+    margin-top: auto;
+    padding: 18px;
+    background: #f7f9fc;
+    border: 1px solid #edf0f5;
+    border-radius: 16px;
+}
+
+.sidebar-budget p {
+    color: #7b8494;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.sidebar-budget h3 {
+    color: #18243a;
+    font-size: 17px;
+    margin-bottom: 13px;
+}
+
+.budget-progress {
+    width: 100%;
+    height: 7px;
+    overflow: hidden;
+    background: #e6eaf0;
+    border-radius: 999px;
+    margin-bottom: 9px;
+}
+
+.budget-progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #2563eb;
+    border-radius: inherit;
+    transition: width 0.4s ease;
+}
+
+.sidebar-budget small {
+    color: #7b8494;
+    font-size: 11px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    width: calc(100% - 255px);
+    margin-left: 255px;
+    padding: 30px 36px 50px;
+    max-width: 1600px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.header-left .welcome-message {
+    color: #7b8494;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.header-left h1 {
+    color: #172033;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* NOTIFICATIONS */
+
+.notification,
+#notificationButton {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #e7ebf1;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+.notification:hover,
+#notificationButton:hover {
+    background: #f1f5ff;
+    transform: translateY(-2px);
+}
+
+/* PROFILE */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #2563eb;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info strong {
+    color: #273249;
+    font-size: 13px;
+}
+
+.profile-info small {
+    color: #8a93a3;
+    font-size: 11px;
+}
