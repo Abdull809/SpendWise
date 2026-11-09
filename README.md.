@@ -1,31 +1,77 @@
-# SpendWise – Personal Finance Dashboard
+# 💰 SpendWise – Personal Budget Tracker
 
 ## Project Description
-SpendWise is a personal finance dashboard designed to help users manage expenses, track monthly budgets, monitor spending categories and view savings.
+SpendWise is a personal budget tracking web application designed to help users manage their income, monitor expenses, organize spending categories and track savings.
 
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript
-- GitHub
-- Netlify
-
-## GitHub Repository
-https://github.com/Abdull809/SpendWise
+The application uses Kenyan Shillings (KSh) as its currency.
 
 ## Live Website
 https://spendwise-kenya-2026.netlify.app
 
-## Deployment Summary
-The project is hosted on GitHub and will be deployed using Netlify. Automatic deployments will be enabled through GitHub integration.
+## GitHub Repository
+https://github.com/Abdull809/SpendWise
 
-## Challenges
-- Connecting JavaScript to HTML.
-- Managing expense calculations.
-- Preparing the project for deployment.
+## Features
+- Dashboard displaying income, expenses and remaining balance.
+- Monthly budget tracking.
+- Add and manage expenses.
+- Spending categories.
+- Recent transaction records.
+- Savings goal tracking.
+- Settings and demo data reset.
+
+## Technologies Used
+- HTML5 – Website structure.
+- CSS3 – Styling and responsive design.
+- JavaScript – Application functionality and interactivity.
+- Git and GitHub – Version control and project hosting.
+- Netlify – Website deployment and hosting.
+
+## Project Structure
+```text
+SpendWise/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## How to Run the Project Locally
+1. Download or clone the repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` using Live Server or a web browser.
+4. Use the dashboard to explore the application.
+
+## Deployment Steps
+1. Created a public GitHub repository named `SpendWise`.
+2. Uploaded the project files, including HTML, CSS and JavaScript.
+3. Created a Netlify account.
+4. Connected the GitHub repository to Netlify.
+5. Selected the project repository for deployment.
+6. Published the website on Netlify.
+7. Updated the README file with the live website URL.
+8. Verified that the deployed website opens successfully.
 
 ## Lessons Learned
-- How to organize a web development project.
-- How to use GitHub for version control and hosting code.
-- How to deploy a website using Netlify.
-- How automatic deployment works.
+Through this project, I learned how to:
+
+- Create a web application using HTML, CSS and JavaScript.
+- Organize project files in a structured folder.
+- Create and manage a public GitHub repository.
+- Use GitHub for version control.
+- Connect GitHub to Netlify.
+- Deploy and publish a website online.
+- Update project documentation.
+- Understand automatic deployment when changes are pushed to GitHub.
+
+## Challenges Faced
+- Connecting the GitHub repository to Netlify.
+- Configuring the deployment correctly.
+- Updating the live website after making changes.
+- Ensuring that the website worked correctly after deployment.
+
+## Conclusion
+SpendWise demonstrates my understanding of basic web development, version control, project documentation and website deployment using GitHub and Netlify.
+
+The project is publicly available through the live website link provided above.
